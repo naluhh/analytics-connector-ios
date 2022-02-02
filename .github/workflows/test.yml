@@ -37,7 +37,7 @@ jobs:
         run: |
           xcodebuild \
             -project AnalyticsConnector.xcodeproj \
-            -scheme AnalyticsConnector
+            -scheme AnalyticsConnector \
             -sdk appletvsimulator \
             -destination 'platform=tvOS Simulator,name=Apple TV' \
 
