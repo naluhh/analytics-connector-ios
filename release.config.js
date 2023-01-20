@@ -20,8 +20,8 @@ module.exports = {
         "replacements": [
           {
             "files": ["AnalyticsConnector.podspec"],
-            "from": "amplitude_connector_version = \".*\"",
-            "to": "amplitude_connector_version = \"${nextRelease.version}\"",
+            "from": "analytics_connector_version = \".*\"",
+            "to": "analytics_connector_version = \"${nextRelease.version}\"",
             "results": [
               {
                 "file": "AnalyticsConnector.podspec",
