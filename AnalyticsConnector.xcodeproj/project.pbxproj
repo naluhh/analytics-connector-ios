@@ -30,7 +30,6 @@
 		20866C9A2771454C003D1705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20866C9B27714900003D1705 /* AnalyticsConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnalyticsConnector.h; sourceTree = "<group>"; };
 		20866C9C2771491B003D1705 /* AnalyticsConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsConnector.swift; sourceTree = "<group>"; };
-		20C9FAAF278CB1C000A4D530 /* AnalyticsConnectorTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AnalyticsConnectorTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		20C9FAB0278CB1C000A4D530 /* ObjectiveCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTests.m; sourceTree = "<group>"; };
 		E9945CC325797C030066398B /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,7 +61,6 @@
 				2001756E2773B679001C341D /* EventBridgeTests.swift */,
 				200175742773D888001C341D /* IdentityStoreTests.swift */,
 				20C9FAB0278CB1C000A4D530 /* ObjectiveCTests.m */,
-				20C9FAAF278CB1C000A4D530 /* AnalyticsConnectorTests-Bridging-Header.h */,
 			);
 			path = AnalyticsConnectorTests;
 			sourceTree = "<group>";
@@ -332,7 +330,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amplitude.AnalyticsConnectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvos appletvsimulator";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tests/AnalyticsConnectorTests/AnalyticsConnectorTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,6";
@@ -358,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.amplitude.AnalyticsConnectorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx appletvos appletvsimulator";
-				SWIFT_OBJC_BRIDGING_HEADER = "Tests/AnalyticsConnectorTests/AnalyticsConnectorTests-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,3,6";
 				TVOS_DEPLOYMENT_TARGET = 9.0;
