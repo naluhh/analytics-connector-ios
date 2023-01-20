@@ -8,14 +8,14 @@ on:
 
 jobs:
   test:
-    runs-on: macos-10.15
+    runs-on: macos-latest
     steps:
       - name: Checkout 
         uses: actions/checkout@v2
 
-      - name: Set Xcode 12.4
+      - name: Set Xcode 13.4
         run: |
-          sudo xcode-select -switch /Applications/Xcode_12.4.app
+          sudo xcode-select -switch /Applications/Xcode_13.4.app
 
       - name: iOS Build 
         run: |
@@ -23,7 +23,7 @@ jobs:
             -project AnalyticsConnector.xcodeproj \
             -scheme AnalyticsConnector \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4'
+            -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.5'
 
       - name: macOS Build 
         run: |
