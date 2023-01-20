@@ -13,6 +13,7 @@
 		2001756927728E16001C341D /* IdentityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001756827728E16001C341D /* IdentityStore.swift */; };
 		2001756F2773B679001C341D /* EventBridgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001756E2773B679001C341D /* EventBridgeTests.swift */; };
 		200175752773D888001C341D /* IdentityStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200175742773D888001C341D /* IdentityStoreTests.swift */; };
+		20C47A8E297A674F0084AC03 /* AnalyticsConnector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200174A52771569E001C341D /* AnalyticsConnector.framework */; };
 		20C9FAB1278CB1C000A4D530 /* ObjectiveCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C9FAB0278CB1C000A4D530 /* ObjectiveCTests.m */; };
 		20C9FAD4278CBFAC00A4D530 /* AnalyticsConnector.h in Headers */ = {isa = PBXBuildFile; fileRef = 20866C9B27714900003D1705 /* AnalyticsConnector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -46,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20C47A8E297A674F0084AC03 /* AnalyticsConnector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

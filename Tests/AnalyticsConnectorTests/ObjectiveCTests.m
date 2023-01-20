@@ -8,8 +8,9 @@
 #import <Foundation/Foundation.h>
 
 #import <XCTest/XCTest.h>
-#import <AnalyticsConnector/AnalyticsConnector-Swift.h>
 #import <dispatch/dispatch.h>
+
+@import AnalyticsConnector;
 
 @interface ObjectiveCTests : XCTestCase
 
