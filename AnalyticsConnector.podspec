@@ -1,4 +1,4 @@
-analytics_connector_version = "1.0.3-beta.1" # Version is managed automatically by semantic-release, please dont change it manually
+analytics_connector_version = "1.0.3-beta.2" # Version is managed automatically by semantic-release, please dont change it manually
 
 Pod::Spec.new do |spec|
 
@@ -15,10 +15,10 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = '10.0'
   spec.ios.source_files       = 'Sources/AnalyticsConnector/**/*.{h,swift}'
 
-  spec.osx.deployment_target  = '10.13'
+  spec.osx.deployment_target  = '10.10'
   spec.osx.source_files       = 'sources/AnalyticsConnector/**/*.{h,swift}'
 
-  spec.tvos.deployment_target = '10.0'
+  spec.tvos.deployment_target = '9.0'
   spec.tvos.source_files      = 'sources/AnalyticsConnector/**/*.{h,swift}'
   
   spec.watchos.deployment_target = '3.0'
