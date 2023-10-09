@@ -7,8 +7,8 @@ let package = Package(
     name: "analytics-connector-ios",
     platforms: [
         .iOS(.v10),
-        .macOS(.v10_10),
-        .tvOS(.v9),
+        .macOS(.v10_13),
+        .tvOS(.v10),
         .watchOS(.v3)
     ],
     products: [
