@@ -30,9 +30,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Set Xcode 13.4
+      - name: Set Xcode 14.3.1
         run: |
-          sudo xcode-select -switch /Applications/Xcode_13.4.app
+          sudo xcode-select -switch /Applications/Xcode_14.3.1.app
 
       - name: iOS Build 
         run: |
@@ -86,6 +86,12 @@ jobs:
 
       - name: Validate Podfile
         run: pod lib lint --allow-warnings
+
+      - name: Build xcframework
+        run: scripts/build_framework.sh
+      
+      - name: Zip xcframework
+        run: zip -r .build/artifacts/AnalyticsConnector.xcframework.zip .build/artifacts/AnalyticsConnector.xcframework
 
       - name: Semantic Release --dry-run
         if: ${{ github.event.inputs.dryRun == 'true'}}
