@@ -91,7 +91,8 @@ jobs:
         run: scripts/build_framework.sh
       
       - name: Zip xcframework
-        run: zip -r .build/artifacts/AnalyticsConnector.xcframework.zip .build/artifacts/AnalyticsConnector.xcframework
+        working-directory: .build/artifacts
+        run: zip -r AnalyticsConnector.xcframework.zip AnalyticsConnector.xcframework
 
       - name: Semantic Release --dry-run
         if: ${{ github.event.inputs.dryRun == 'true'}}
