@@ -13,7 +13,12 @@ module.exports = {
     ["@semantic-release/changelog", {
       "changelogFile": "CHANGELOG.md"
     }],
-    "@semantic-release/github",
+    [
+      "@semantic-release/github", {
+        "assets": [
+          { "path": ".build/artifacts/AnalyticsConnector.xcframework.zip" },
+        ]
+    }],
     [
       "@google/semantic-release-replace-plugin",
       {
