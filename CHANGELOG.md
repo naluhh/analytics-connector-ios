@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/amplitude/analytics-connector-ios/compare/v1.0.3...v1.1.0) (2024-10-29)
+
+
+### Features
+
+* distribute precompiled framework ([9bc2082](https://github.com/amplitude/analytics-connector-ios/commit/9bc2082e98af02ae918a98948bb7efcf499442f9))
+
 ## [1.0.3](https://github.com/amplitude/analytics-connector-ios/compare/v1.0.2...v1.0.3) (2023-10-09)
 
 
