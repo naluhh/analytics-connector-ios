@@ -27,6 +27,9 @@ let package = Package(
             name: "AnalyticsConnector",
             path: "Sources/AnalyticsConnector",
             exclude: ["Info.plist"]),
+        .binaryTarget(name: "AnalyticsConnectorFramework",
+            url: "https://github.com/amplitude/analytics-connector-ios/releases/download/v1.1.1/AnalyticsConnector.xcframework.zip",
+            checksum: "4d5ecd7301d34ef4cfb91a799e8d32940fd7c9eac4b5ab62b820ad447d18b594"),
         .testTarget(
             name: "AnalyticsConnectorTests",
             dependencies: ["AnalyticsConnector"],
