@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/amplitude/analytics-connector-ios/compare/v1.1.0...v1.1.1) (2024-10-30)
+
+
+### Bug Fixes
+
+* don't include build path in zipped artifact ([1113761](https://github.com/amplitude/analytics-connector-ios/commit/1113761a163d9b82cd28b4b25d5557c582eca34f))
+* support mac catalyst ([d0d1ce6](https://github.com/amplitude/analytics-connector-ios/commit/d0d1ce6fd587beb2c1606bc8e3362a85b1cb55bc))
+
 # [1.1.0](https://github.com/amplitude/analytics-connector-ios/compare/v1.0.3...v1.1.0) (2024-10-29)
 
 
