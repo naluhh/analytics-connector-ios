@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.2...v1.2.3) (2024-10-30)
+
+
+### Bug Fixes
+
+* expose AnalyticsConnectorFramework library ([6c77c55](https://github.com/amplitude/analytics-connector-ios/commit/6c77c553b4ee005d264c19ed07804b4aca287332))
+
 ## [1.2.2](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.1...v1.2.2) (2024-10-30)
 
 
