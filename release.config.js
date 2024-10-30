@@ -37,6 +37,20 @@ module.exports = {
             ],
             "countMatches": true
           },
+          {
+            "files": ["Package.swift"],
+            "from": "https://github.com/amplitude/analytics-connector-ios/releases/download/v.*/AnalyticsConnector.xcframework.zip",
+            "to": "https://github.com/amplitude/analytics-connector-ios/releases/download/v${nextRelease.version}/AnalyticsConnector.xcframework.zip",
+            "results": [
+              {
+                "file": "Package.swift",
+                "hasChanged": true,
+                "numMatches": 1,
+                "numReplacements": 1
+              }
+            ],
+            "countMatches": true
+          },
         ]
       }
     ],

@@ -94,6 +94,11 @@ jobs:
         working-directory: .build/artifacts
         run: zip -r AnalyticsConnector.xcframework.zip AnalyticsConnector.xcframework
 
+      - name: Update Checksum
+        run: |
+          CHECKSUM=$(xcrun swift package compute-checksum .build/artifacts/AnalyticsConnector.xcframework.zip) && \
+          sed -i '' -E "s/(checksum: \")[^\"]*(\")/\1$CHECKSUM\2/" Package.swift
+
       - name: Semantic Release --dry-run
         if: ${{ github.event.inputs.dryRun == 'true'}}
         env:
