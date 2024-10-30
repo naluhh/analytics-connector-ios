@@ -17,6 +17,10 @@ let package = Package(
             name: "AnalyticsConnector",
             targets: ["AnalyticsConnector"]
         ),
+        .library(
+            name: "AnalyticsConnectorFramework",
+            targets: ["AnalyticsConnectorFramework"]
+        )
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
