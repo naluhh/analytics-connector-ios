@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/amplitude/analytics-connector-ios/compare/v1.1.1...v1.2.0) (2024-10-30)
+
+
+### Features
+
+* add binary spm distribution ([215a48a](https://github.com/amplitude/analytics-connector-ios/commit/215a48a24181e43a518492874d8eeddfcc998376))
+
 ## [1.1.1](https://github.com/amplitude/analytics-connector-ios/compare/v1.1.0...v1.1.1) (2024-10-30)
 
 
