@@ -6,7 +6,7 @@ SCHEME="AnalyticsConnector"
 FRAMEWORK="AnalyticsConnector"
 BUILD_DIR="./.build/artifacts"
 OUTPUT_PATH="$BUILD_DIR/$FRAMEWORK.xcframework"
-PLATFORMS=("macOS" "iOS" "iOS Simulator" "tvOS" "tvOS Simulator" "watchOS" "watchOS Simulator")
+PLATFORMS=("iOS" "iOS Simulator" "macOS" "macOS Cataylst" "watchOS" "watchOS Simulator" "tvOS" "tvOS Simulator")
 
 build_framework_with_configuration_and_name() {
     CONFIGURATION=${1}
@@ -15,13 +15,25 @@ build_framework_with_configuration_and_name() {
     for PLATFORM in "${PLATFORMS[@]}"
     do
         ARCHIVE="$BUILD_DIR/$CONFIGURATION/$FRAMEWORK-$PLATFORM.xcarchive"
-        xcodebuild archive \
-            -scheme "$SCHEME" \
-            -configuration "$CONFIGURATION" \
-            -archivePath "$ARCHIVE" \
-            -destination "generic/platform=$PLATFORM" \
-            SKIP_INSTALL=NO \
-            BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+        if [[ "$PLATFORM" == "macOS Cataylst" ]]
+        then
+            xcodebuild archive \
+                -scheme "$SCHEME" \
+                -configuration "$CONFIGURATION" \
+                -archivePath "$ARCHIVE" \
+                -destination "generic/platform=macOS,variant=Mac Catalyst" \
+                SKIP_INSTALL=NO \
+                BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+                SUPPORTS_MACCATALYST=YES
+        else
+            xcodebuild archive \
+                -scheme "$SCHEME" \
+                -configuration "$CONFIGURATION" \
+                -archivePath "$ARCHIVE" \
+                -destination "generic/platform=$PLATFORM" \
+                SKIP_INSTALL=NO \
+                BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+        fi
         ARCHIVES+=("$ARCHIVE")
     done
 
