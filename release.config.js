@@ -55,7 +55,7 @@ module.exports = {
       }
     ],
     ["@semantic-release/git", {
-      "assets": ["AnalyticsConnector.podspec", "CHANGELOG.md"],
+      "assets": ["AnalyticsConnector.podspec", "CHANGELOG.md", "Package.swift"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
     ["@semantic-release/exec", {
