@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.1...v1.2.2) (2024-10-30)
+
+
+### Bug Fixes
+
+* commit changes to Package.swift ([963a404](https://github.com/amplitude/analytics-connector-ios/commit/963a404c2d2d8ce77840d20036c35f4a3bdc4809))
+
 # [1.2.0](https://github.com/amplitude/analytics-connector-ios/compare/v1.1.1...v1.2.0) (2024-10-30)
 
 
