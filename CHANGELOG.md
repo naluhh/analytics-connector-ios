@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.3...v1.2.4) (2024-11-01)
+
+
+### Bug Fixes
+
+* preserve symlinks in zipped frameworks ([e6f7395](https://github.com/amplitude/analytics-connector-ios/commit/e6f73953c24429dd0141078953702be2720e9a23))
+
 ## [1.2.3](https://github.com/amplitude/analytics-connector-ios/compare/v1.2.2...v1.2.3) (2024-10-30)
 
 
