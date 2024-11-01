@@ -92,7 +92,7 @@ jobs:
       
       - name: Zip xcframework
         working-directory: .build/artifacts
-        run: zip -r AnalyticsConnector.xcframework.zip AnalyticsConnector.xcframework
+        run: zip -r -y AnalyticsConnector.xcframework.zip AnalyticsConnector.xcframework
 
       - name: Update Checksum
         run: |
